@@ -83,6 +83,7 @@ def Train(epochs, neural_network):
             targets = numpy.zeros(outputnodes) + 0.01
             targets[int(all_values[0])] = 0.99
             neural_network.train(inputs, targets)
+        SaveNeura(neural_network, n=e+1)
         print('Эпоха', e+1, 'завершена')
 
         # Проверка эффективности сети
@@ -116,11 +117,11 @@ def Train(epochs, neural_network):
 # TO DO:
 # Сделать сравнение с прошлым результатом тренировки.
 # Если эффективность больше - сохраняем результат, нет - не сохраняем и выводим ошибку
-def SaveNeura(neural_network):
+def SaveNeura(neural_network, n=None):
     input_weight = neural_network.get_w('wih')
     output_weight = neural_network.get_w('who')
-    numpy.save('wih.npy', input_weight)
-    numpy.save('who.npy', output_weight)
+    numpy.save('wih' + str(n) + '.npy', input_weight)
+    numpy.save('who' + str(n) + '.npy', output_weight)
 
 
 # Определение числа по изображению img.jpg (28x28 пикселей)
