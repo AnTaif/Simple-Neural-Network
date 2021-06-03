@@ -1,2 +1,4 @@
 # Simple-Neural-Network
-My first neural network for recognizing numbers
+Нейронная сеть на python для предсказания цифры 
+----Нейронная сеть - Neura.py (Эффективность сети ~97.46 %)
+----GUI для нейронной сети в main.py
