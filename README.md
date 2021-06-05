@@ -1,8 +1,8 @@
 # Simple-Neural-Network
 Нейронная сеть на python для предсказания цифр: 
 
-  Нейронная сеть - Neura.py   --or--  Neura_Jupyter.ipynb (Эффективность сети ~97.46 %)
+  Нейронная сеть  ->  Neura.py   --or--  Neura_Jupyter.ipynb (Эффективность сети ~97.46 %)
   
-  GUI для нейронной сети - main.py
+  GUI для нейронной сети  ->  main.py
   
-  Сохраненные веса для нейронной сети - wih.npy , who.npy
+  Сохраненные веса для нейронной сети  ->  wih.npy , who.npy
